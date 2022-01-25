@@ -1,6 +1,6 @@
 def show_homepage():
     print("")
-    print("           === DonateMe Hompage ===       ")
+    print("          === DonateMe Hompage ===       ")
     print("------------------------------------------")
     print("| 1.    Login       | 2.  Register       |")
     print("------------------------------------------")
@@ -8,3 +8,4 @@ def show_homepage():
     print("------------------------------------------")
     print("|               5.    Exit               |")
     print("------------------------------------------")
+    
