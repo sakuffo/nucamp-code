@@ -1,0 +1,14 @@
+What is the purpose of the __init__ method in a class? When does it execute? 
+- it is used to initialize the class or subclass with attributes and methods
+
+What is the purpose of the self parameter in a method? 
+- self is the reference to the instance of the object itself that is calling the method
+
+What is an instance?
+- and actual running example or representation of the object in memory
+
+How do you define a subclass from a superclass?
+- class <ClassName>(<SuperClassName>)
+
+What is the use of the super() function?
+- when creating attributes in subclasses the super functions allowed references to attributes from the super class.

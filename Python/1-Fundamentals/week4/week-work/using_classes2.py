@@ -10,6 +10,5 @@ class User:
 
 
 user1 = User("jane", "jane@nucamp.co", "janespassword")
-
 print(user1.password)
 user1.change_password("bestpassword")
