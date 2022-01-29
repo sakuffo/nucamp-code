@@ -2,10 +2,14 @@ from bankUser import BankUser
 
 
 """ Driver Code for Task 1 """
+# Task 1 can be found in /user.py
+
 # bob = User("Bob", "1234", "password")
 # print(f"{bob.name} {bob.pin} {bob.password}")
 
 """ Driver Code for Task 2 """
+# Task 2 can be found in /user.py
+
 # tom = BankUser("Tom", "4321", "password")
 # print(f"{tom.name} {tom.pin} {tom.password}")
 # tom.change_name("Tommy")
