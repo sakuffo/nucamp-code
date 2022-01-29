@@ -1,40 +1,39 @@
-# Task 1: Create a class called User.
-
-class User:
-
-    def __init__(self, name, pin, password):
-        pass
-
-    # Task 2: Create User Class instance methods
-    def change_name():
-        pass
-
-    def change_pin():
-        pass
-
-    def change_password():
-        pass
-
-# Task 3: Create BankUser subclass
+from bankUser import BankUser
 
 
-class BankUser(User):
-    def __init__(self, name, pin, password):
-        super().__init__(name, pin, password)
+""" Driver Code for Task 1 """
+# bob = User("Bob", "1234", "password")
+# print(f"{bob.name} {bob.pin} {bob.password}")
 
-    # Task 4: Create BankUser instance methods
-    def show_balance():
-        pass
+""" Driver Code for Task 2 """
+# tom = BankUser("Tom", "4321", "password")
+# print(f"{tom.name} {tom.pin} {tom.password}")
+# tom.change_name("Tommy")
+# tom.change_pin("54321")
+# tom.change_password("new_password")
+# print(f"{tom.name} {tom.pin} {tom.password}")
 
-    def withdraw():
-        pass
+""" Driver Code for Task 3 """
+# esi = BankUser("Esi", "1234", "password")
+# print(f"{esi.name} {esi.pin} {esi.password} {esi.balance}")
 
-    def deposit():
-        pass
+""" Driver Code for Task 4 """
+# akosua = BankUser("akosua", "1234", "password")
+# akosua.show_balance()
+# akosua.deposit(1000)
+# akosua.show_balance()
+# akosua.withdraw(500)
+# akosua.show_balance()
 
-    # Task 5: Transfer and request money
-    def transfer_money():
-        pass
+""" Driver Code for Task 5 """
 
-    def request_money():
-        pass
+# create both users and initialize their balances
+kofi = BankUser("Kofi", "1234", "kpass")
+kofi.deposit(5000)
+ibrahim = BankUser("Ibrahim", "1234", "ipass")
+kofi.show_balance()
+ibrahim.show_balance()
+print()
+# transfer money from kofi to ibrahim'
+kofi.transfer_money(ibrahim, 500)
+ibrahim.request_money(kofi, 250)
