@@ -9,6 +9,7 @@ while True:
     weapon = rps_game.weapon_select()
     enemy_weapon = rps_game.weapon_select(1)
     defeated_weapon = rps_game.weapons[weapon]
+    rps_game.play_round(weapon, enemy_weapon)
     if weapon == enemy_weapon:
         print(f'This round is a draw! {weapon} are {enemy_weapon} matched')
     elif enemy_weapon in defeated_weapon:
@@ -16,6 +17,6 @@ while True:
     else:
         print(f'The enemy has won! {enemy_weapon} beats {weapon}')
 
-    option = input('(Y) to play again and anything else to exit: ').lower()
+    option = input('\n\n(Y) to play again and anything else to exit: ').lower()
     if option != 'y':
         break

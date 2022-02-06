@@ -1,5 +1,6 @@
 import players
 import random
+import time
 
 
 class GameWorld:
@@ -12,19 +13,26 @@ class GameWorld:
             'paper': 'rock'
         }
 
+    def play_round(self, weapon, enemy_weapon):
+        print(f'The player selected {weapon}!')
+        print('Lets see what the computer selects.......')
+        time.sleep(random.randint(1, 3))
+        print(f'The enemy selected {enemy_weapon}!')
+        time.sleep(1)
+
     def weapon_select(self, cpu=0):
         if cpu:
             option = random.randint(1, 3)
         else:
             option = input(
-                '''
-                    Select your weapon!\n
-                    Rock (1)\n
-                    Paper (2)\n
-                    Scissors (3)\n 
-
-                    -- 
-                '''
+                ''' \n ------------------
+                    \n Select your weapon!
+                    \n ------------------
+                    \n Rock (1)
+                    \n Paper (2)
+                    \n Scissors (3)
+                    \n ------------------
+                    \n Pick your weapon:  '''
             )
 
         num_option = int(option)
