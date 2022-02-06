@@ -1,18 +1,12 @@
 import players
-import choices
 
 
 class GameWorld:
     def __init__(self):
         self.player = players.Player()
         self.enemy = players.Enemy()
-        self.choices = {
-            "rock": choices.Rock(),
-            "paper": choices.Paper(),
-            "scissors": choices.Scissors()
+        self.weapons = {
+            'rock': 'scissors',
+            'scissors': 'paper',
+            'paper': 'rock'
         }
-
-
-class Match:
-    def __init__(self):
-        self.game = GameWorld()
