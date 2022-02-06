@@ -1,14 +1,13 @@
 from gameworld import GameWorld
 
-
 rps_game = GameWorld()
 P1 = rps_game.player
 PE = rps_game.enemy
 
 while True:
     print('Welcome to rock paper scissors')
-    weapon = P1.attack()
-    enemy_weapon = PE.attack(rps_game.weapons.values())
+    weapon = rps_game.weapon_select()
+    enemy_weapon = rps_game.weapon_select(1)
     defeated_weapon = rps_game.weapons[weapon]
     if weapon == enemy_weapon:
         print(f'This round is a draw! {weapon} are {enemy_weapon} matched')
